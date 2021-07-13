@@ -1,0 +1,5 @@
+node_modules
+build
+src/examples.ts
+.DS_Store
+notes.md
