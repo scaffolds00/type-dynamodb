@@ -22,6 +22,7 @@ export type SortingKeyFilter<T> = {
 export type FieldsFilter<T> = {
     [P in keyof T]?: {equal?: T[P],range?: KeyRange<T[P]>, contains?: string, notEqual?: T[P], begins_with?: string} 
 };
+
 // export type OneKey<K extends string, V = any> = {
 // 	[P in K]: (Record<P, V> &
 // 	  Partial<Record<Exclude<K, P>, never>>) extends infer O
@@ -29,6 +30,6 @@ export type FieldsFilter<T> = {
 // 	  : never
 //   }[K];
 
-export type KeyValueType = {
+export type InputKeys = {
 	[key: string]: any;
 };

@@ -65,20 +65,7 @@ export class MetadataStorage {
         }
     }
 
-    // getKeys
     getConstructorFieldsMetaData(target: Function): GeneralFieldMetadata[]{
-        // const {onlyKeys, indexName} = options;
-        // if(indexName){
-        //     const key = this.secondaryKeys.find((key)=> (key.indexName == indexName && key.target == target))
-        //     if(key?.isLocalIndex){
-        //         const partitionKey = this.secondaryKeys.find((key)=> (key.isPartitionKey == true && key.target == target));
-        //         return [partitionKey, key];
-        //     }else if(key?.isGlobalIndex){
-
-        //     }else{
-
-        //     }
-        // }
         const fields = this.fields.filter(field=>
              (field.target == target ))
         return fields

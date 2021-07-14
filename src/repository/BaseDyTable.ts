@@ -1,12 +1,12 @@
-import { InputKeys } from '../db/dbManger/types';
 import { getMetadataStorage } from '../metadata';
 import { ClassType } from '../utils/ClassType';
 import { ClassConstructor } from 'class-transformer';
 import {
 	FieldsFilter,
+	InputKeys,
 	SortingKeyFilter,
 } from '../utils';
-import { dyDelete, dyGet, dyPut, dyQuery, dyScan, dyUpdate } from '../db/dbManger/crud';
+import { dyDelete, dyGet, dyPut, dyQuery, dyScan, dyUpdate } from './crud';
 
 export type DyObjectType<T> = { new (...args: any[]): T } | Function;
 
@@ -97,11 +97,11 @@ export abstract class BaseDyTable {
 	}
 
 	async dyUpdate<T extends BaseDyTable>(this: T, keys: Partial<T>): Promise<T> {
-		const key = this.getTablePrimaryKeys(); //TODO: pass keys
+		const key = this.getTablePrimaryKeys();
 		return dyUpdate(key, keys, this.constructor as ClassType<T>);
     }
     async dyDelete<T extends BaseDyTable>(this: T): Promise<void>{
-		const key = this.getTablePrimaryKeys(); //TODO: pass keys
+		const key = this.getTablePrimaryKeys();
 		return dyDelete(key, this.constructor as ClassType<T>);
 	}
 }

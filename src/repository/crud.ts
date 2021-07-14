@@ -1,17 +1,18 @@
-import { db } from '../dbConnection';
+import { db } from './dbConnection';
 import { updateExpressionParams } from './helper/helper';
-import { ClassConstructor, plainToClass, Type } from 'class-transformer';
-import { InputKeys } from './types';
-import { ClassType } from '../../utils/ClassType';
-import { getMetadataStorage } from '../../metadata';
+import { ClassConstructor, plainToClass } from 'class-transformer';
+import { ClassType } from '../utils/ClassType';
+import { getMetadataStorage } from '../metadata';
 import {
 	FieldsFilter,
+	InputKeys,
 	objIsEmpty,
 	SortingKeyFilter,
 	SortingKeyFilterOptions,
-} from '../../utils';
+} from '../utils';
 import { DocumentClient } from 'aws-sdk/clients/dynamodb';
 import { configFilter, filterExpression } from './helper';
+
 
 export const dyGet = async <T>(
 	keys: InputKeys,

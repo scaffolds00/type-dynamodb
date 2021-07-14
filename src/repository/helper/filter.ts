@@ -1,6 +1,6 @@
 import { DocumentClient } from 'aws-sdk/clients/dynamodb';
-import { FieldsFilter, KeyRange } from '../../../utils';
-import { objIsEmpty, generateObjFromArrays } from '../../../utils/helper/helper';
+import { FieldsFilter, KeyRange } from '../../utils';
+import { objIsEmpty, generateObjFromArrays } from '../../utils/helper/helper';
 
 
 export type ArrayFilter<T> = Array<T>;
