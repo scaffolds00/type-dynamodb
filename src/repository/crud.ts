@@ -1,5 +1,5 @@
 import { db } from './dbConnection';
-import { updateExpressionParams } from './helper/helper';
+import { updateExpressionParams } from './helper/update';
 import { ClassConstructor, plainToClass } from 'class-transformer';
 import { ClassType } from '../utils';
 import { getMetadataStorage } from '../metadata';
