@@ -1,6 +1,6 @@
 # type-dynamodb
 
-**type-dynamodb** is simple but powerful dynamodb ORM that uses decorator design pattern to get the most benefits from typescript and oop like inheritance, overload methods and adding multiple  layers of decorators.
+**type-dynamodb** is simple but powerful dynamodb ORM that uses decorator design pattern to get the most benefits from typescript and oop like inheritance, override methods and adding multiple  layers of decorators.
 
 -----
 
