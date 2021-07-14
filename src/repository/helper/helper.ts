@@ -1,7 +1,7 @@
 import {
 	generateObjFromArrays,
 	objIsEmpty,
-} from '../../utils/helper/helper';
+} from '../../utils/helper';
 
 /**
  * this function return the expressionParams for updateItem function

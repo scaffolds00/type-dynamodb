@@ -1,8 +1,11 @@
-
-
 // export type SortingKeysFilter = {
 // 	[key: string]: string| number | KeyRange;
 // };
+
+export interface ClassType<T = any> {
+	new (...args: any[]): T;
+}
+
 export type Entries<T> = {
 	[K in keyof T]?: [K, T[K]]
 }[]

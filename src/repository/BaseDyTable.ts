@@ -1,5 +1,5 @@
 import { getMetadataStorage } from '../metadata';
-import { ClassType } from '../utils/ClassType';
+import { ClassType } from '../utils';
 import { ClassConstructor } from 'class-transformer';
 import {
 	FieldsFilter,

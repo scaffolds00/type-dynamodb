@@ -1,7 +1,7 @@
 import { db } from './dbConnection';
 import { updateExpressionParams } from './helper/helper';
 import { ClassConstructor, plainToClass } from 'class-transformer';
-import { ClassType } from '../utils/ClassType';
+import { ClassType } from '../utils';
 import { getMetadataStorage } from '../metadata';
 import {
 	FieldsFilter,
