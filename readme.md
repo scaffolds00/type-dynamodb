@@ -2,6 +2,8 @@
 
 **type-dynamodb** is simple but powerful dynamodb ORM that uses decorators to get the most benefits from typescript and OOP like inheritance, override methods and adding multiple  layers of decorators.
 
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+
 -----
 
 ## Installation
